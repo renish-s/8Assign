@@ -1,0 +1,116 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+
+    <title></title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+    <style>
+        table {
+            border-collapse: separate;
+            border-spacing: 0 15px;
+        }
+
+        td {
+            padding: 0 15px;
+        }
+    </style>
+</head>
+<body>
+    <script type="text/javascript" src="JavaScript.js"></script>
+
+    <h4 align="center"><b>REGISTRATION FORM</b></h4>
+
+    <form align="center" style="border:outset">
+
+        <table align="center">
+
+            <tr>
+                <td><b>User Id:</b></td>
+                <td><div class="error" id="uidErr"></div> </td>
+                <td><input type="text" id="uid" /> </td>
+            </tr>
+
+            <tr>
+                <td><b>Password  :</b></td>
+                <td><div class="error" id="pswdErr"></div> </td>
+                <td><input type="text" id="pswd" /></td>
+            </tr>
+
+            <tr>
+                <td><b>Name  :</b></td>
+                <td><div class="error" id="nameErr"></div> </td>
+                <td><input type="text" id="name" /></td>
+            </tr>
+
+            <tr>
+                <td><b>Address  :</b></td>
+                <td><div class="error" id="addressErr"></div> </td>
+                <td><input type="text" id="address" /></td>
+            </tr>
+
+            <tr>
+                <td><b>Country  :</b></td>
+                <td><div class="error" id="countryErr"></div> </td>
+                <td>
+                    <select id="country">
+                        <option value=0>(Please Select a Country)</option>
+                        <option value=1>India</option>
+                        <option value=2>USA</option>
+                        <option value=3>UAE</option>
+                    </select>
+                </td>
+            </tr>
+
+            <tr>
+                <td><b>ZIP Code  :</b></td>
+                <td><div class="error" id="zipErr"></div> </td>
+                <td><input type="text" id="zip" /></td>
+            </tr>
+
+            <tr>
+                <td><b>Email  :</b></td>
+                <td><div class="error" id="emailErr"></div> </td>
+                <td><input type="text" id="email" /></td>
+            </tr>
+
+            <tr>
+                <td><b>Sex  :</b></td>
+                <td><div>[Select Male or Female]</div> </td>
+                <td>
+                    <input type="radio" value="Male" name="gender" id="male" />Male
+                    <input type="radio" value="Female" name="gender" id="female" />Female
+                </td>
+            </tr>
+
+            <tr>
+                <td><b>Language   :</b></td>
+                <td><div>[Optional]</div> </td>
+                <td>
+                    <input type="checkbox" id="lang" />English
+                    <input type="checkbox" id="lang" />Non English
+                </td>
+            </tr>
+
+            <tr>
+                <td><b>About   :</b></td>
+                <td><div>[Optional]</div> </td>
+                <td><textarea id="about" rows="5" cols="23"></textarea></td>
+            </tr>
+
+            <tr>
+                <td colspan="5" align="center">
+                    <input type="submit" onclick="return validation()" />
+                </td>
+            </tr>
+        </table>
+    </form>
+
+
+</body>
+</html>
